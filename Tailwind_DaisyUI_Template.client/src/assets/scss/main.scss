@@ -1,8 +1,10 @@
-@import "./_variables.scss";
-@import "bootstrap";
-@import "./_overrides.scss";
-@import "./_utilities.scss";
-@import "./loaders.scss";
+// @import "./_variables.scss";
+// @import "./_overrides.scss";
+// @import "./_utilities.scss";
+// @import "./loaders.scss";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body{
   overscroll-behavior: none;
@@ -28,10 +30,10 @@ textarea,
 select {
   &:not(:placeholder-shown) {
     &:valid {
-      border: 1px solid $success;
+      border: 1px solid green;
     }
     &:invalid {
-      border: 1px solid $danger;
+      border: 1px solid red;
     }
   }
 }
