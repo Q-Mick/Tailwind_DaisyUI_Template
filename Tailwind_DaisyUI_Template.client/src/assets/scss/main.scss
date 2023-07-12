@@ -2,9 +2,13 @@
 // @import "./_overrides.scss";
 // @import "./_utilities.scss";
 // @import "./loaders.scss";
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Your custom styles */
+
 
 body{
   overscroll-behavior: none;
@@ -30,10 +34,10 @@ textarea,
 select {
   &:not(:placeholder-shown) {
     &:valid {
-      border: 1px solid green;
+      border: 1px solid #198754;
     }
     &:invalid {
-      border: 1px solid red;
+      border: 1px solid #dc3545;
     }
   }
 }
